@@ -1,0 +1,213 @@
+/*
+    ESTILOS GERAIS
+    
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+/*
+    LAYOUT PRINCIPAL (GRID)
+   
+*/
+.container-principal {
+    display: grid;
+    grid-template-columns: 80px 1fr 300px;
+    min-height: 100vh;
+}
+
+/*
+    BARRA LATERAL ESQUERDA
+    
+*/
+.barra-lateral-esquerda {
+    background-color: white;
+    padding: 20px 0;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;
+}
+
+/*
+    ÁREA DE CONTEÚDO PRINCIPAL
+    
+*/
+.conteudo-principal {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*
+    BARRA LATERAL DIREITA
+    
+*/
+.barra-lateral-direita {
+    background-color: white;
+    border-left: 1px solid #ddd;
+}
+
+/*
+    SEÇÃO DE POSTAGEM
+    
+*/
+.secao-postagem {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+/*
+    CABEÇALHO DO PERFIL
+    -Flexbox para alinhar a foto e o nome de um lado e o botão do outro.
+*/
+.header-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*
+    INFORMAÇÕES DO PERFIL (FOTO E NOME)
+    -Flexbox para alinhar a foto de perfil e o nome lado a lado.
+*/
+.info-perfil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-perfil img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info-perfil h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.info-perfil p {
+    margin: 0;
+    font-size: 14px;
+    color: #65676b;
+}
+
+/*
+    ESTILIZAÇÃO DO CAMPO E BOTÃO DE POSTAGEM
+*/
+.campo-postagem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.campo-postagem textarea {
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    resize: none;
+}
+
+.botao-postar, .botao-perfil {
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botao-perfil {
+    background-color: #f0f2f5;
+    color: #3b5998;
+    border: 1px solid #ddd;
+}
+
+.botao-postar:hover, .botao-perfil:hover {
+    opacity: 0.8;
+}
+
+/*
+    ESTILIZAÇÃO DOS POSTS
+    - POST JOÃO E MARIA.
+*/
+.lista-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+/*IMAGEM, NOME DE USUÁRIO E ARROBA*/
+.header-post {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.header-post img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* NOME DE USUÁRIO E ARROBA*/
+.info-post {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-post .nome-usuario {
+    font-weight: bold;
+    margin: 0;
+}
+
+.info-post .arroba-usuario {
+    font-size: 12px;
+    color: #65676b;
+    margin: 0;
+}
+/*COMENTÁRIO*/
+.texto-post {
+    margin: 0 0 15px 0;
+}
+/* PARTE DE INTERAÇÃO (EMOJIS JUNTOS)*/
+.footer-post {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    color: #65676b;
+}
+/*EMOJI ÚNICO*/
+.interacao {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/*MEXE NO TAMANHO DO EMOJI*/
+.icone {
+    font-size: 16px;
+}
